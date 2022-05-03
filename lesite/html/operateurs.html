@@ -1,0 +1,82 @@
+<!doctype html> <html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="PROST Quentin">
+  <title>Rainbow Six Siege</title>
+  <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+</head>
+<body onload="affdate();">
+  <header>
+    <img src="../media/image/header.png" alt="header\.png" class="imgheader"></header>
+  <nav>
+    <p class="menu"><a href="index.html">Accueil</a></p>
+    <p class="menu"><a href="jeu.html">Le jeu</a></p>
+    <p class="menu"><a href="operateurs.html">Les op&eacute;rateurs</a></p>
+    <p class="menu"><a href="contact.html">&agrave; propos</a></p>
+  </nav>
+
+  <h4>Les op&eacute;rateurs de base</h4>
+
+  <div class="tabope">
+    <table class="def">
+      <caption>LES DEFENSEURS</caption>
+      <tr>
+        <td><img src="../media/image/ope/def/kapkan.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(18, 11)" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/def/tachanka.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(18, 20)" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/def/doc.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(6, 4);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/def/rook.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(6, 18);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/def/castle.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(21, 3);" alt="Image manquante"></td>
+      </tr>
+      <tr>
+        <td><img src="../media/image/ope/def/mute.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(1, 13);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/def/smoke.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(1, 190);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/def/jager.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(4, 10);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/def/bandit.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(4, 20);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/def/pulse.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(21, 16);" alt="Image manquante"></td>
+    </tr>
+    </table>
+
+    <table class="att">
+      <caption>LES ATTAQUANTS</caption>
+      <tr>
+        <td><img src="../media/image/ope/att/fuze.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(18, 6);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/att/glaz.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(18, 7);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/att/twitch.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(6, 20);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/att/montagne.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(6, 13);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/att/thermite.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(21, 20);" alt="Image manquante"></td>
+      </tr>
+      <tr>
+        <td><img src="../media/image/ope/att/thatcher.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(1, 20);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/att/sledge.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(1, 191);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/att/iq.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(4, 9);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/att/blitz.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(4, 21);" alt="Image manquante"></td>
+        <td><img src="../media/image/ope/att/ash.png" width="120" onmouseover="this.width='135'" onmouseout="this.width='120'" onclick="info(21, 1);" alt="Image manquante"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="infodetail">
+    <h3 id="agent" style="text-align: center;">Identité de ...</h3>
+    <p id="nom"><span style="text-decoration: underline;font-weight: bold;">Nom :</span></p>
+    <p id="prenom"><span style="text-decoration: underline;font-weight: bold;">Prénom :</span></p>
+    <p id="unite"><span style="text-decoration: underline;font-weight: bold;">Unité :</span></p>
+    <p id="ddn"><span style="text-decoration: underline;font-weight: bold;">Date de naissance :</span></p>
+    <p id="ldn"><span style="text-decoration: underline;font-weight: bold;">Lieu de naissance :</span></p>
+    <p id="biographie"><span style="text-decoration: underline;font-weight: bold;">Biographie :</span></p>
+    <p id="sdj"><span style="text-decoration: underline;font-weight: bold;">Style de jeu :</span></p>
+    <input style="margin-left: 35%;margin-top: 4px;" type="button" id="init" value="Effacer" onclick="init();"/>
+  </div>
+
+  <input type="button" class="suivo" onclick="self.location.href='contact.html'" value="Suivant">
+  <input type="button" class="preco" onclick="self.location.href='jeu.html'" value="Précédent">
+
+  <div class="fpgo">
+    <p id="date">Nous sommes le </p>
+    <p>Site internet réalisé dans le cadre d'un projet de première année de licence informatique au sein de l'université de Bourgogne.</p>
+    <p><a href="index.html">Sommaire</a></p>
+  </div>
+
+
+  <script type="text/javascript" src="../javascript/script.js"></script>
+</body>
+</html>
