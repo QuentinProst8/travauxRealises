@@ -1,0 +1,67 @@
+<!doctype html> <html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="PROST Quentin">
+  <title>Rainbow Six Siege</title>
+  <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+</head>
+<body onload="affdate();">
+<header>
+  <img src="../media/image/header.png" alt="header\.png" class="imgheader">
+</header>
+<nav>
+  <p class="menu"><a href="index.html">Accueil</a></p>
+  <p class="menu"><a href="jeu.html">Le jeu</a></p>
+  <p class="menu"><a href="operateurs.html">Les op&eacute;rateurs</a></p>
+  <p class="menu"><a href="contact.html">&agrave; propos</a></p>
+</nav>
+
+<h5>Formulaire de contact</h5>
+<form class="form1" id="formcontact" action="mailto:quentin.prost@live.fr" method="post">
+  <div class="fcontact">
+    <div class="divlabel">
+      <label class="label1" for="nom">Nom : </label>
+      <label class="label1" for="prenom">Prénom : </label>
+      <label class="label1" for="email">Adresse mail : </label>
+      <label class="label1" for="tel">Téléphone : </label>
+      <label class="label1" for="colorb">Couleur de fond : </label>
+      <p class="label1">Message : </p>
+    </div>
+    <div class="divinput">
+      <input class="input1" type="text" id="nom" placeholder="Votre nom" autofocus>
+      <input class="input1" type="text" id="prenom" placeholder="Votre prénom">
+      <input class="input1" type="email" id="email" placeholder="xxx@xxx.xx">
+      <input class="input1" type="tel" id="tel" placeholder="0xxxxxxxxx">
+      <input class="input1" type="color" id="colorb" onchange="changecolor()">
+      <textarea id="message" class="input" rows="4" cols="25"></textarea>
+    </div>
+    <div class="bouttonv">
+      <p id="rappel"></p>
+    <input type="button" class="valid" name="valider" value="Envoyer" onclick="valideform();">
+    <input type="reset" class="raz" name="eff" value="Effacer">
+    </div>
+  </div>
+</form>
+
+<h6>&Agrave; propos</h6>
+<div class="aprop">
+  <p>Le contenu cité dans les différentes pages de ce site internet sont tirées du site officiel de Raimbow Six Siege, accessible en cliquant sur l'image.</p>
+  <a href="https://rainbow6.ubisoft.com/siege/fr-fr/home/index.aspx" target="_blank">
+    <img class="imglogo" src="../media/image/logo.png" alt="manque image">
+  </a>
+</div>
+
+
+<input type="button" class="suivc" onclick="self.location.href='index.html'" value="Suivant">
+<input type="button" class="precc" onclick="self.location.href='operateurs.html'" value="Précédent">
+
+<div class="fpgc">
+  <p id="date">Nous sommes le </p>
+  <p>Site internet réalisé dans le cadre d'un projet de première année de licence informatique au sein de l'université de Bourgogne.</p>
+  <p><a href="index.html">Sommaire</a></p>
+</div>
+
+<script type="text/javascript" src="../javascript/script.js">
+</script>
+</body>
+</html>
